@@ -1,48 +1,25 @@
-# find out the maximum value in the array
+#maximum occurence of sameelements
+# arr = [1,2,2,3,4,4,4,5,5,5]
+# maxcount = 0
+# res = arr[0]
+# current_count = 0
+# for i in range(0,len(arr)):
+#     current_count =0
+#     for j in range(0,len(arr)):
+#         if arr[i]==arr[j]:
+#             current_count+=1
+#     if current_count>maxcount:
+#         maxcount=current_count
+#         res=arr[i]
+# print("maximum occurence element is:",res,"with count:",maxcount)
 
-# arr =[ 12,3,45,67,23,89,90]
+# sum of max and min element in array
+# arr =[12,5,45,76,2,23,21]
 # max=arr[0]
+# min=arr[0]
 # for i in range(len(arr)):
 #     if arr[i]>max:
 #         max=arr[i]
-# print("maximum value is:",max)
-
-#find the second maximum value in the array
-# import math
-# arr=[12,7,8,6,9]
-# max=-math.inf
-# max2=-math.inf
-# for cur in arr:
-#     if cur>max:
-#         max2=max
-#         max=cur
-#     elif cur > max2:
-#         max2=cur
-# print("second maximum value is:",max2)
-
-
-#find the 2nd minimum value in the array
-# import math
-# arr=[12,7,8,6,9]
-# min=math.inf
-# min2=math.inf
-# for cur in arr:
-#     if cur<min:
-#         min2=min
-#         min=cur
-#     elif cur < min2:
-#         min2=cur
-# print("second minimum value is:",min2)
-
-from typing import List
-
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(0,len(nums)):
-            firstnumber = nums[i]
-
-            for j in range(i,len(nums)):
-                secondNumber =nums[j]
-                if firstnumber+ secondNumber == target:
-                    return [i , j]
-        
+#     if arr[i]<min:
+#         min=arr[i]
+# print("sum of max and min element is:",max+min)
