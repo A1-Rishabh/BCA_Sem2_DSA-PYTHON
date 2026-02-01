@@ -23,3 +23,25 @@
 #     if arr[i]<min:
 #         min=arr[i]
 # print("sum of max and min element is:",max+min)
+
+# calculate the sum and product of all elements in an array
+# arr=[12,7,6,3]
+# sum=0
+# product=1
+# for i in range(len(arr)):
+#     sum=sum+arr[i]
+#     product=product*arr[i]
+# print("sum of all elements is:",sum)
+# print("product of all elements is:",product)
+
+
+#convert decimal to binary
+n=(int(input("Enter a Number: ")))
+binary=0
+x=1
+for i in range(0,32):
+    rem=n%2
+    binary=binary+rem*x
+    x=x*10
+    n=n//2
+print(binary)
