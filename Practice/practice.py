@@ -47,22 +47,30 @@
 # print(binary)
 
 #move zeros to end of array
-nums=[0,1,0,3,12]
-nonzero=0
-for i in range(0,len(nums)):
-    if nums[i]!=0:
-        nums[i],nums[nonzero]=nums[nonzero],nums[i]
-        nonzero+=1
-print(nums)
+# nums=[0,1,0,3,12]
+# nonzero=0
+# for i in range(0,len(nums)):
+#     if nums[i]!=0:
+#         nums[i],nums[nonzero]=nums[nonzero],nums[i]
+#         nonzero+=1
+
+# print(nums)
 
 # count the number of even and odd elements in an array
-arr=[12,3,4,5,6,7,8,9]
-even_count=0
-odd_count=0
-for i in range(len(arr)):
-    if arr[i]%2==0:
-        even_count+=1 
-    else:
-        odd_count+=1
-print("even count is:",even_count)
-print("odd count is:",odd_count)
+# arr=[12,3,4,5,6,7,8,9]
+# even_count=0
+# odd_count=0
+# for i in range(len(arr)):
+#     if arr[i]%2==0:
+#         even_count+=1 #     else:
+#         odd_count+=1
+# print("even count is:",even_count)
+# print("odd count is:",odd_count)
+
+# rotate array by k times
+arr= [9,8,1,6,3]
+lastvalue=arr[-1]
+for i in range(len(arr)-1,-1,-1):
+    arr[i]=arr[i-1]
+arr[0]=lastvalue
+print(arr)
