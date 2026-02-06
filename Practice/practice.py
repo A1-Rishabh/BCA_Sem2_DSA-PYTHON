@@ -68,9 +68,18 @@
 # print("odd count is:",odd_count)
 
 # rotate array by k times
+# arr= [9,8,1,6,3]
+# lastvalue=arr[-1]
+# for i in range(len(arr)-1,-1,-1):
+#     arr[i]=arr[i-1]
+# arr[0]=lastvalue
+# print(arr)
+
 arr= [9,8,1,6,3]
-lastvalue=arr[-1]
-for i in range(len(arr)-1,-1,-1):
-    arr[i]=arr[i-1]
-arr[0]=lastvalue
+n=len(arr)
+arr=[0]*n
+for i in range(0,n):
+    arr[(i+1)%n]=arr[i]
+for i in range(n):
+    arr[i]=arr[i]
 print(arr)

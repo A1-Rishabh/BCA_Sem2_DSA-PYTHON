@@ -22,17 +22,17 @@
 
 
 #find the 2nd minimum value in the array
-# import math
-# arr=[12,7,8,6,9]
-# min=math.inf
-# min2=math.inf
-# for cur in arr:
-#     if cur<min:
-#         min2=min
-#         min=cur
-#     elif cur < min2:
-#         min2=cur
-# print("second minimum value is:",min2)
+import math
+arr=[12,7,8,6,9]
+min=math.inf
+min2=math.inf
+for cur in arr:
+    if cur<min:
+        min2=min
+        min=cur
+    elif cur < min2:
+        min2=cur
+print("second minimum value is:",min2)
 
 # from typing import List
 
