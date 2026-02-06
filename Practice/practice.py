@@ -75,11 +75,22 @@
 # arr[0]=lastvalue
 # print(arr)
 
-arr= [9,8,1,6,3]
-n=len(arr)
-arr=[0]*n
-for i in range(0,n):
-    arr[(i+1)%n]=arr[i]
-for i in range(n):
-    arr[i]=arr[i]
-print(arr)
+#print alternate elements in an array
+# arr=[12,7,8,6,9]
+# for i in range(0,len(arr),2):
+#     print(arr[i])
+
+#print the elements in reverse order
+# arr=[12,7,8,6,9]
+# for i in range(len(arr)-1,-1,-1):
+#     print(arr[i])
+
+
+# find the missing number in the array
+# arr=[1,2,3,5]
+# n=5
+# total_sum=n*(n+1)//2
+# arr_sum=sum(arr)
+# missing_number=total_sum-arr_sum
+# print("missing number is:",missing_number)
+
