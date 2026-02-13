@@ -1,37 +1,35 @@
-# rows = int(input("Enter rows: "))
-# columns = int(input("Enter columns: "))
+rows = int(input("Enter rows: "))
+columns = int(input("Enter columns: "))
 
-# matrix = []
-# # creation of matrix
-# for i in range(rows):
-#     row = []
-#     for j in range(columns):
-#         value = int(input("Enter the value:"))
-#         row.append(value)
-#     matrix.append(row)
-
-# print("Matrix")
-
-# # traversal of matrix
-# for i in range(rows):
-#     for j in range(columns):
-#         print(matrix[i][j],end=" ")
-#     print()
-
-
-row=int(input("enter a number in row"))
-colomn=int(input("enter a number in colomn"))
-matrix =[]
-for i in range(row):
-    row=[]
-    for _ in range(colomn):
-        value = int(input("enter a value position"))
+matrix = []
+# creation of matrix
+for i in range(rows):
+    row = []
+    for j in range(columns):
+        value = int(input("Enter the value:"))
         row.append(value)
     matrix.append(row)
 
-print(matrix)
+print("Matrix")
 
-for i in range(row):
-    for j in range(colomn):
+# traversal of matrix 
+for i in range(rows):
+    for j in range(columns):
         print(matrix[i][j],end=" ")
     print()
+
+# visiting primary diagonal
+for i in range(rows):
+    print(matrix[i][i],end=" ")
+# visiting secondary diagonal
+for i in range(rows):
+    print(matrix[i][columns-1-i],end=" ")
+
+# # visiting all elements in row wise manner
+# for i in range(rows):
+#     for j in range(columns):
+#         print(matrix[i][j],end=" ")
+# # visiting all elements in column wise manner
+# for j in range(columns):
+#     for i in range(rows):
+#         print(matrix[i][j],end=" ")
