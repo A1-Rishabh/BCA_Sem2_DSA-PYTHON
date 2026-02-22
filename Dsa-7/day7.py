@@ -29,11 +29,4 @@ for r in range(1,rows):
 
 
 #Transpose of a matrix
-for r in range(rows):
-    for c in range(columns):
-        matrix[r][c],matrix[c][r]=matrix[c][r],matrix[r][c]
-print("Transpose of the matrix:")
-for r in range(rows):
-    for c in range(columns):
-        print(matrix[r][c], end=" ")
-    print()
+transpose = []
