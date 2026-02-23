@@ -27,6 +27,17 @@ for r in range(1,rows):
     print() 
 
 
-
-#Transpose of a matrix
+# Transpose of a matrix
 transpose = []
+
+for c in range(columns):
+    row = []
+    for r in range(rows):
+        row.append(matrix[r][c])
+    transpose.append(row)
+
+print("Transpose of the matrix:")
+for i in range(columns):
+    for j in range(rows):
+        print(transpose[i][j], end=" ")
+    print()
